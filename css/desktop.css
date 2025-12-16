@@ -1,0 +1,84 @@
+body {
+  font-size: 1.8rem;
+  margin: 0;
+  background-color: #0a0a0a;
+  color: white;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.rien {
+  display: none;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1.5rem 5%;
+  z-index: 1000;
+  display: flex;
+  border-bottom: 1px solid white;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 5rem;
+}
+.ul-nav {
+  display: flex;
+  list-style: none;
+  padding: 1.5rem 5%;
+  box-sizing: border-box;
+}
+a {
+  color: white;
+  margin-right: 50px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.list-nav::first-letter {
+  text-transform: capitalize;
+}
+.titre {
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 150px;
+  font-size: 70px;
+}
+.metier {
+  text-align: center;
+}
+.skills {
+  padding-top: 500px;
+  text-transform: capitalize;
+  text-align: center;
+  background: linear-gradient(135deg, blue, aqua);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.competences {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid aqua;
+  border-radius: 15px;
+  padding: 5px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+#li-competences {
+  list-style-type: none;
+  list-style-position: inside;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#li-competences:before {
+  content: "❄️";
+  font-size: 20px;
+}
