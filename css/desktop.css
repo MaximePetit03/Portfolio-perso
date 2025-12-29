@@ -1,5 +1,5 @@
 body {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin: 0;
   background-color: #0a0a0a;
   color: white;
@@ -20,6 +20,7 @@ nav {
   width: 100%;
   padding: 1.5rem 5%;
   z-index: 1000;
+  background-color: #0a0a0a;
   display: flex;
   border-bottom: 1px solid white;
   justify-content: space-between;
@@ -52,6 +53,7 @@ a {
 .metier {
   text-align: center;
 }
+/* Section : compétences */
 .skills {
   padding-top: 500px;
   text-transform: capitalize;
@@ -60,25 +62,41 @@ a {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 .competences {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   border: 2px solid aqua;
   border-radius: 15px;
   padding: 5px;
+  width: 30%;
 }
-ul {
-  margin: 0;
-  padding: 0;
+img {
+  width: 40px;
+  height: 40px;
+  margin-left: 40px;
+  margin-top: 20px;
 }
-#li-competences {
+.competences h3 {
+  margin-left: 45px;
+}
+.competences ul {
+  padding-right: 150px;
+}
+.competences li {
   list-style-type: none;
   list-style-position: inside;
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-#li-competences:before {
+.competences li:before {
   content: "❄️";
   font-size: 20px;
 }
+/* Section : projets */
