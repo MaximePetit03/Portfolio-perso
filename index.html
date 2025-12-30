@@ -11,18 +11,21 @@
       <nav>
         <div><a href="#accueil" class="logo">🐧</a></div>
         <ul class="ul-nav">
-          <li class="list-nav"><a href="#">accueil</a></li>
-          <li class="list-nav"><a href="">mes compétences</a></li>
-          <li class="list-nav"><a href="">mes projets</a></li>
+          <li class="list-nav"><a href="#accueil">accueil</a></li>
+          <li class="list-nav"><a href="#skills">mes compétences</a></li>
+          <li class="list-nav"><a href="#projets">mes projets</a></li>
         </ul>
       </nav>
-      <h1 class="titre" id="accueil">maxime petit</h1>
-      <h2 class="metier">Développeur Full-stack</h2>
-      <p></p>
+      <section>
+        <h1 class="titre" id="accueil">maxime petit</h1>
+        <p class="metier">
+          Étudiant en B1 Développement Fullstack à CODA Orléans
+        </p>
+      </section>
     </header>
     <main>
-      <h1 class="skills">mes compétences</h1>
-      <section class="container responsive-plan">
+      <h1 id="skills">mes compétences</h1>
+      <section class="container responsive-plan space">
         <div class="competences">
           <h3>Front-end</h3>
           <img
@@ -49,21 +52,23 @@
           </ul>
         </div>
       </section>
-      <h1 class="skills">Mes projets</h1>
-      <!--Pas de description seulement uneimage du projet en fond avec le titre par dessus-->
-      <section>
+      <h1 id="projets">Mes projets</h1>
+      <!--Pas de description seulement une image du projet en fond avec le titre par dessus-->
+      <section class="grid">
         <div>
-          <h3>Pathfinding</h3>
+          <img src="img/Bataille.png" alt="Image not found" />
+          <h3>Bataille navale</h3>
         </div>
         <div>
+          <img src="img/script.png" alt="Image not found" />
           <h3>Script fighter</h3>
         </div>
         <div>
-          <h3>Bataille navale</h3>
+          <img src="img/Maquette.png" alt="Image not found" />
+          <h3>Maquette css</h3>
         </div>
       </section>
     </main>
-    <footer></footer>
     <script src="script.js"></script>
   </body>
 </html>

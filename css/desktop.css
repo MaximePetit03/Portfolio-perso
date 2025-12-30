@@ -6,6 +6,7 @@ body {
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 .container {
   width: 90%;
@@ -44,6 +45,12 @@ a {
 .list-nav::first-letter {
   text-transform: capitalize;
 }
+section {
+  padding: 8rem 5%;
+}
+h1 {
+  scroll-margin-top: 200px;
+}
 .titre {
   text-transform: capitalize;
   text-align: center;
@@ -52,21 +59,23 @@ a {
 }
 .metier {
   text-align: center;
+  padding-bottom: 300px;
+  font-size: 30px;
 }
 /* Section : compétences */
-.skills {
-  padding-top: 500px;
+#skills {
   text-transform: capitalize;
   text-align: center;
   background: linear-gradient(135deg, blue, aqua);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-section {
+main section {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  padding: 8rem 5%;
 }
 .competences {
   display: flex;
@@ -76,7 +85,7 @@ section {
   padding: 5px;
   width: 30%;
 }
-img {
+.competences img {
   width: 40px;
   height: 40px;
   margin-left: 40px;
@@ -99,4 +108,36 @@ img {
   content: "❄️";
   font-size: 20px;
 }
+.space {
+  padding-bottom: 510px;
+}
 /* Section : projets */
+
+#projets {
+  text-transform: capitalize;
+  text-align: center;
+  background: linear-gradient(135deg, blue, aqua);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grid img {
+  width: 400px;
+  height: 300px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 40px;
+  justify-content: center;
+}
+
+.grid > div {
+  text-align: center;
+}
+
+.grid > div:nth-child(3) {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
