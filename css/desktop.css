@@ -36,6 +36,10 @@ nav {
   padding: 1.5rem 5%;
   box-sizing: border-box;
 }
+nav li:hover {
+  transition: 0.5s;
+  opacity: 0.5;
+}
 nav a {
   color: white;
   margin-right: 50px;
@@ -113,7 +117,7 @@ main section {
 }
 /* Section : projets */
 
-#projets {
+h1 {
   text-transform: capitalize;
   text-align: center;
   background: linear-gradient(135deg, blue, aqua);
@@ -162,4 +166,7 @@ main section {
   opacity: 0;
   background: rgba(0, 0, 0, 0.45);
   transition: 0.5s;
+}
+
+.reseaux {
 }
