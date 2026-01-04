@@ -12,6 +12,10 @@ html {
   width: 90%;
   margin: 0 auto;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
 .rien {
   display: none;
 }
@@ -41,7 +45,6 @@ nav li:hover {
   opacity: 0.5;
 }
 nav a {
-  color: white;
   margin-right: 50px;
   font-size: 20px;
   text-decoration: none;
@@ -60,7 +63,14 @@ h1 {
   text-align: center;
   margin-top: 150px;
   font-size: 70px;
+  background: linear-gradient(90deg, magenta, purple, magenta, purple);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient 8s ease infinite;
 }
+
 .metier {
   text-align: center;
   padding-bottom: 300px;
@@ -169,4 +179,49 @@ h1 {
 }
 
 .reseaux {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.reseaux div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+  background: #e1d7d7;
+  border-radius: 25px;
+}
+
+.linkedin img {
+  width: 150px;
+  object-fit: contain;
+  margin-left: 5px;
+}
+
+.github img {
+  width: 120px;
+  object-fit: contain;
+  margin-left: 5px;
+}
+
+.email img {
+  width: 110px;
+  object-fit: contain;
+  margin-left: 2px;
+}
+.linkedin img:hover {
+  transition: 0.5s;
+  width: 160px;
+}
+
+.github img:hover {
+  transition: 0.5s;
+  width: 130px;
+}
+
+.email img:hover {
+  transition: 0.4s;
+  width: 120px;
 }
