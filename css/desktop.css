@@ -195,7 +195,7 @@ h1 {
 }
 
 .linkedin img {
-  width: 150px;
+  width: 110px;
   object-fit: contain;
   margin-left: 5px;
 }
@@ -211,9 +211,10 @@ h1 {
   object-fit: contain;
   margin-left: 2px;
 }
+
 .linkedin img:hover {
   transition: 0.5s;
-  width: 160px;
+  width: 120px;
 }
 
 .github img:hover {
