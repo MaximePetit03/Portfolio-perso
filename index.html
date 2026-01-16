@@ -3,10 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
-  <body>
+  <body id="mobile-body">
     <header>
       <nav>
         <div><a href="#accueil" class="logo">🐧</a></div>
@@ -17,28 +23,31 @@
           <li class="list-nav"><a href="#reseau">mes réseaux</a></li>
         </ul>
       </nav>
-      <section>
+      <section class="presentation responsive-plan">
         <h1 class="titre" id="accueil">maxime petit</h1>
         <p class="metier">
           Étudiant en B1 Développement Fullstack à CODA Orléans
         </p>
+        <p>
+          Étudiant passionné en 1ère année de Développement Fullstack à l'école
+          CODA Orléans. Je créer toutes sortes de projets pour étendre mes
+          compétences en permanence en faisant des projets qui me plaisent.
+        </p>
+        <div><a href="#projets" class="link">Mes projets</a></div>
       </section>
     </header>
     <main>
       <h1 id="skills">mes compétences</h1>
       <section class="container responsive-plan space">
         <div class="competences">
-          <h3>Front-end</h3>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Front-end-logo-color%402x.png"
-            alt="Logo front-end"
-          />
+          <h3 class="front-end">Front-end</h3>
           <ul>
-            <li>Html 5/Css3</li>
+            <li>Html 5/Css 3</li>
+            <li>JavaScript</li>
           </ul>
         </div>
         <div class="competences">
-          <h3>Back-end</h3>
+          <h3 class="back-end">Back-end</h3>
           <ul>
             <li>PHP/SQL</li>
             <li>C</li>
@@ -46,7 +55,7 @@
           </ul>
         </div>
         <div class="competences">
-          <h3>Système</h3>
+          <h3 class="systeme">Système</h3>
           <ul>
             <li>Linux/Unix</li>
             <li>Git/GitHub</li>
@@ -55,7 +64,7 @@
       </section>
       <h1 id="projets">Mes projets</h1>
       <!--Pas de description seulement une image du projet en fond avec le titre par dessus-->
-      <section class="grid project-card">
+      <section class="grid project-card responsive-plan">
         <div>
           <img
             src="img/Bataille.png"
@@ -88,7 +97,7 @@
             ><h3 class="project-title">Maquette css</h3>
           </a>
         </div>
-      </section>
+      </section class="responsive-plan">
       <h1 id="reseau">mes réseaux</h1>
       <section class="reseaux">
         <div class="linkedin">
