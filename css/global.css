@@ -10,6 +10,7 @@ body {
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -19,6 +20,7 @@ a {
   text-decoration: none;
   color: white;
 }
+
 .rien {
   display: none;
 }
@@ -26,6 +28,7 @@ a {
 .logo {
   font-size: 5rem;
 }
+
 .ul-nav {
   display: flex;
   list-style: none;
@@ -38,12 +41,15 @@ nav a {
   font-size: 20px;
   text-decoration: none;
 }
-.list-nav::first-letter {
+
+.list-nav a::first-letter {
   text-transform: capitalize;
 }
+
 section {
   padding: 8rem 5%;
 }
+
 .presentation {
   display: flex;
   flex-direction: column;
@@ -181,7 +187,7 @@ main {
   justify-self: center;
   text-decoration: none;
   margin-top: 15px;
-  color: #006fff;
+  color: 006fff;
   background: linear-gradient(to top, #006fff 0%, #006fff 10%, transparent 10%)
     no-repeat left bottom / 0 100%;
   transition: background-size 0.5s;
@@ -297,9 +303,15 @@ a:hover {
     align-items: center;
   }
 
-  nav li:hover {
-    transition: 0.5s;
-    opacity: 0.5;
+  .list-nav a {
+    text-decoration: none;
+    display: inline-block;
+    background: linear-gradient(white, white) no-repeat left bottom / 0 1px;
+    transition: background-size 0.3s ease;
+  }
+
+  .list-nav a:hover {
+    background-size: 100% 2px;
   }
 
   .metier::after {
