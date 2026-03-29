@@ -1,0 +1,404 @@
+body {
+  font-size: 2rem;
+  margin: 0;
+  background-color: #0a0a0a;
+  color: white;
+
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.rien {
+  display: none;
+}
+
+.logo {
+  font-size: 5rem;
+}
+.ul-nav {
+  display: flex;
+  list-style: none;
+  padding: 1.5rem 5%;
+  box-sizing: border-box;
+}
+
+nav a {
+  margin-right: 50px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.list-nav::first-letter {
+  text-transform: capitalize;
+}
+section {
+  padding: 8rem 5%;
+}
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  scroll-margin-top: 200px;
+  text-transform: capitalize;
+  text-align: center;
+  background: linear-gradient(135deg, blue, aqua);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.titre {
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 150px;
+  font-size: 70px;
+  background: linear-gradient(90deg, magenta, purple, magenta, purple);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient 5s ease infinite;
+}
+
+p {
+  text-align: center;
+}
+
+#description {
+  width: 75%;
+}
+
+.metier {
+  color: rgb(29, 29, 251);
+  text-shadow: 0 0 5px rgb(29, 29, 251);
+}
+
+.link {
+  border: 2px solid black;
+  padding: 10px;
+  background-color: rgb(30, 30, 30);
+  border-radius: 15px;
+}
+
+.link:active {
+  padding: 11px 18px 11px 18px;
+}
+
+main {
+  margin-top: 300px;
+}
+
+/* Section : compétences */
+#skills {
+  text-transform: capitalize;
+  text-align: center;
+  background: linear-gradient(135deg, blue, aqua);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.competences {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  font-weight: bold;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 0, 111, 0.8),
+    rgb(209, 149, 159)
+  );
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.competences .front-end::before {
+  content: "</ ";
+  font-size: 25px;
+}
+
+.competences .front-end::after {
+  content: " >";
+  font-size: 25px;
+}
+
+.competences .back-end::before {
+  font-size: 25px;
+}
+
+.competences ul {
+  padding-right: 150px;
+}
+
+.competences li {
+  list-style-type: none;
+  list-style-position: inside;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.competences li:before {
+  content: "❄️";
+  font-size: 20px;
+}
+
+.back-end {
+  color: rgb(2, 224, 224);
+}
+
+.back-end::before {
+  content: "$";
+}
+
+.systeme {
+  color: rgb(1, 1, 158);
+}
+
+.systeme::before {
+  content: "/mnt/c/";
+  color: rgb(12, 202, 56);
+}
+
+.space {
+  padding-bottom: 510px;
+}
+
+/* Section : projets */
+.seeMore {
+  grid-column: 1 / -1;
+  justify-self: center;
+  text-decoration: none;
+  margin-top: 15px;
+  color: #006fff;
+  background: linear-gradient(to top, #006fff 0%, #006fff 10%, transparent 10%)
+    no-repeat left bottom / 0 100%;
+  transition: background-size 0.5s;
+}
+
+a:hover {
+  background-size: 100% 100%;
+}
+
+.reseaux {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.reseaux div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+  background: #e1d7d7;
+  border-radius: 25px;
+}
+
+.linkedin img {
+  width: 110px;
+  object-fit: contain;
+  margin-left: 5px;
+}
+
+.github img {
+  width: 120px;
+  object-fit: contain;
+  margin-left: 5px;
+}
+
+.email img {
+  width: 110px;
+  object-fit: contain;
+  margin-left: 2px;
+}
+
+/*Responsive MOBILE */
+@media (max-width: 767px) {
+  #mobile-body {
+    font-size: 18px;
+  }
+
+  .responsive-plan {
+    width: 95%;
+    margin-left: 2px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .link {
+    font-size: 20px;
+  }
+
+  main section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .competences {
+    width: 70%;
+    padding-right: 50px;
+  }
+
+  .competences h3 {
+    text-align: center;
+  }
+
+  .competences ul {
+    width: 80%;
+  }
+
+  .space {
+    gap: 25px;
+  }
+
+  .grid img {
+    width: 350px;
+    height: 300px;
+  }
+
+  .grid {
+    width: 95%;
+  }
+}
+
+/*Responsive Desktop */
+@media (min-width: 1024px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem 5%;
+    z-index: 1000;
+    background-color: #0a0a0a;
+    display: flex;
+    border-bottom: 1px solid white;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav li:hover {
+    transition: 0.5s;
+    opacity: 0.5;
+  }
+
+  .metier::after {
+    content: "⎯⎯";
+  }
+
+  .metier::before {
+    content: "⎯⎯";
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  .link {
+    font-size: 25px;
+  }
+
+  .link:hover {
+    transition: 0.25s;
+    font-size: 27px;
+    padding: 11px 18px 11px 18px;
+  }
+
+  .link:active {
+    padding: 15px 23px 15px 23px;
+  }
+
+  main section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 8rem 5%;
+  }
+
+  .competences {
+    width: 30%;
+  }
+
+  .competences h3 {
+    margin-left: 45px;
+  }
+
+  .grid img {
+    width: 400px;
+    height: 300px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 40px;
+    justify-content: center;
+  }
+
+  .grid > div {
+    text-align: center;
+    position: relative;
+  }
+
+  .grid > div:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .grid > div:hover .project-title {
+    opacity: 1;
+  }
+
+  .img-project {
+    display: block;
+  }
+
+  /* titre centré */
+  .project-title {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    margin: 0;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.45);
+    transition: 0.5s;
+  }
+
+  .linkedin img:hover {
+    transition: 0.5s;
+    width: 120px;
+  }
+
+  .github img:hover {
+    transition: 0.5s;
+    width: 130px;
+  }
+
+  .email img:hover {
+    transition: 0.4s;
+    width: 120px;
+  }
+}
